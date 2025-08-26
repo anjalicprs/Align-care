@@ -3,7 +3,6 @@ import { Stethoscope, Hospital, User, ArrowRight, Mail } from "lucide-react";
 
 import heroImage from "@/assets/medical-hero.jpg";
 import GetInTouchForm from "./GetInTouchForm";
-import { useState } from "react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 export default function Hero() {
@@ -20,7 +19,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-0">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
