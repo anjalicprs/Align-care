@@ -1,4 +1,5 @@
 import { Heart, Stethoscope } from "lucide-react";
+import { Dialog, DialogTrigger, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
 export default function Footer() {
   return (
@@ -21,7 +22,35 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2 text-white/70">
-              <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
+              <li>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="hover:text-primary transition-colors underline underline-offset-2">About Us</button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-2xl">
+                    <DialogTitle>About Us</DialogTitle>
+                    <DialogDescription asChild>
+                      <div className="bg-white/80 rounded-xl p-6 text-left text-gray-800 shadow-md">
+                        <h3 className="text-2xl font-bold mb-2">About Us</h3>
+                        <p className="mb-2"><b>Dr Ankit Kumar Modi</b>, MBBS from UCMS, Delhi</p>
+                        <p className="mb-2"><b>Regd. Office:</b> 5/29, Jangpura B, New Delhi - 110014</p>
+                        <p className="mb-2"><b>Email:</b> info.aligntoconnect@gmail.com</p>
+                        <hr className="my-4" />
+                        <h4 className="text-lg font-semibold mb-1">Legal Counsel</h4>
+                        <p className="mb-1"><b>Umesh K Burnwal</b><br/>
+                        Advocate<br/>
+                        Standing Counsel, MCD<br/>
+                        Sr. Panel Counsel, Govt. of India</p>
+                        <p className="mb-1"><b>Contact:</b> +91-9911633057, 9315635350<br/>
+                        <b>Email:</b> globaljudexlawfirm@gmail.com</p>
+                        <p className="mb-1"><b>Office:</b> C-41, LGF, Jangpura Extn., New Delhi-110014</p>
+                        <p className="mb-1"><b>Chamber No. 723:</b> Lawyer’s Chamber Block, Saket Courts Complex, New Delhi-17</p>
+                        <p className="mb-1"><b>Chamber No. 499:</b> Lawyer’s Block-II, Delhi High Court, New Delhi-110001</p>
+                      </div>
+                    </DialogDescription>
+                  </DialogContent>
+                </Dialog>
+              </li>
               <li><a href="#" className="hover:text-primary transition-colors">How It Works</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Support</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
@@ -32,8 +61,8 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Contact</h4>
             <div className="text-white/70 space-y-2">
-              <p>Email: info@aligntohealth.com</p>
-              <p>Phone: 1-800-HEALTH</p>
+              <p>Email: info.aligntoconnect@gmail.com</p>
+              <p>Phone: 87448 25446</p>
               <p>24/7 Support Available</p>
             </div>
           </div>

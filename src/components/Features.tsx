@@ -71,7 +71,7 @@ export default function Features() {
             </span>
             ?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-6">
             We bridge the gap between healthcare professionals and medical institutions,
             creating a unified ecosystem for better patient care.
           </p>

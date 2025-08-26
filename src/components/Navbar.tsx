@@ -29,8 +29,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full bg-white border-b z-50 py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
+        {/* Left: Navigation Links */}
+        <div className="hidden md:flex space-x-8 items-center">
           {navItems.map((item) => (
             <Link
               key={item.text}
@@ -47,8 +47,18 @@ const Navbar = () => {
           ))}
         </div>
 
+
+        {/* Right: Logo */}
+        <div className="hidden md:flex items-center">
+          <img src="/Logo.jpeg" alt="Align To Connect Logo" className="h-20 w-auto ml-8" />
+        </div>
+
         {/* Mobile Navigation */}
-        <div className="md:hidden flex justify-end w-full">
+        <div className="md:hidden flex justify-between w-full items-center">
+          <div className="flex items-center space-x-2">
+            {/* Mobile: Logo at right */}
+            <img src="/Logo.jpeg" alt="Align To Connect Logo" className="h-14 w-auto" />
+          </div>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
