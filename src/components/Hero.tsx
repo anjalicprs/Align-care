@@ -46,20 +46,17 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto animate-fade-in">
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Align to{" "}
-            <span className="bg-gradient-to-r from-accent-light to-white bg-clip-text text-transparent">
-              Health
-            </span>
+            Align to Connect
           </h1>
 
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-white/90 mb-4 font-medium">
-            Where excel pays to excellence
+            Where skill Pays off
           </p>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto">
-            Connecting healthcare professionals with leading hospitals to create
+            Connecting healthcare professionals with healthcare partners to create
             a seamless network of medical excellence.
           </p>
 
@@ -86,16 +83,25 @@ export default function Hero() {
               </Button>
             </a>
 
-            <Button
-              variant="accent"
-              size="lg"
-              onClick={handleHospitalRegistration}
+            <a
+              href="https://docs.google.com/forms/d/1A9oUgWGZ15hSIj9pplesZTneE-oIvu1XBZXuvveFKVs/edit"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group w-full md:w-auto min-w-[250px]"
             >
-              <Hospital className="w-6 h-6 mr-3" />
-              Register as Healthcare partner
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
+              <Button
+                variant="accent"
+                size="lg"
+                className="w-full md:w-auto min-w-[250px] flex items-center justify-center"
+                asChild
+              >
+                <span className="flex items-center">
+                  <Hospital className="w-6 h-6 mr-3" />
+                  Register as Healthcare partner
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </Button>
+            </a>
           </div>
 
           {/* Get in Touch Button and Modal */}

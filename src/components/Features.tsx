@@ -67,7 +67,7 @@ export default function Features() {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Why Choose{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Align to Health
+              Align to connect
             </span>
             ?
           </h2>

@@ -10,10 +10,10 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Stethoscope className="w-8 h-8 text-primary" />
-              <h3 className="text-2xl font-bold">Align to Health</h3>
+              <h3 className="text-2xl font-bold">Align to Connect</h3>
             </div>
             <p className="text-white/70 leading-relaxed">
-              Connecting healthcare professionals with leading hospitals to create
+              Connecting healthcare professionals with healthcare partners to create
               a seamless network of medical excellence.
             </p>
           </div>
@@ -71,7 +71,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm">
-            © 2024 Align to Health. All rights reserved.
+            © 2024 Align to connect. All rights reserved.
           </p>
           <div className="flex items-center space-x-1 text-white/60 text-sm mt-4 md:mt-0">
             <span>Made with</span>
