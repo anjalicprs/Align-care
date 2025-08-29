@@ -104,30 +104,24 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Get in Touch Button and Modal */}
+          {/* Get in Touch Button */}
           <div className="flex justify-center mb-8">
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button
-                  variant="hero"
-                  size="lg"
-                  className="w-full md:w-auto min-w-[250px] flex items-center justify-center"
-                >
-                  <Mail className="w-6 h-6 mr-3" />
-                  Get in Touch
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="p-0 bg-transparent border-0 shadow-none flex justify-center items-center">
-                <div className="w-full max-w-md">
-                  <div className="sr-only">
-                    <span id="get-in-touch-title">Get in Touch</span>
-                    <span id="get-in-touch-desc">Contact us using the form below.</span>
-                  </div>
-                  {/* Accessible title/desc for dialog */}
-                  <GetInTouchForm />
-                </div>
-              </DialogContent>
-            </Dialog>
+            <a
+              href="https://docs.google.com/forms/d/1rAY_ixUAe5LX6thHrvW3I_5jEAQOvgplMkIglgAaTfs/preview"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group w-full md:w-auto min-w-[250px]"
+            >
+              <Button
+                variant="hero"
+                size="lg"
+                className="w-full md:w-auto min-w-[250px] flex items-center justify-center"
+              >
+                <Mail className="w-6 h-6 mr-3" />
+                Get in Touch
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
           </div>
 
           {/* Stats or Features */}
